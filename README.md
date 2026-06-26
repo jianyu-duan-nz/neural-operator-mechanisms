@@ -6,7 +6,7 @@ Code, parameters, and exact-verification artifacts accompanying the paper:
 *A Clear, Neuronal-Level Account of Language, Reasoning, and Other Semantic Transformations*
 Jianyu Duan and Mingjun Duan — AEQ AI Research Institute, New Zealand
 
-📄 Paper: [`The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf`](The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf)
+📄 Paper: [`The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf`](https://raw.githubusercontent.com/jianyu-duan-nz/neural-operator-mechanism/main/The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf)
 
 > **Scope of this repository.** The paper rests on three layers of evidence — an explicit
 > parameter-level construction, free-trained dense networks and a Transformer, and a
@@ -74,7 +74,7 @@ the shared middle term all hold.
 | --- | --- |
 | [`run_fig5_end_to_end_exact.py`](run_fig5_end_to_end_exact.py) | Self-contained script that builds the explicit circuit and runs the full exact verification. |
 | [`results/`](results/) | Generated parameter specification and verification artifacts (see below). |
-| [`The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf`](The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf) | The full paper. |
+| [`The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf`](https://raw.githubusercontent.com/jianyu-duan-nz/neural-operator-mechanism/main/The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf) | The full paper. |
 | [`index.html`](index.html) | Companion English-edition write-up of the verification. |
 | [`requirements.txt`](requirements.txt) | Python dependencies (only `matplotlib`, for the exported graph). |
 
