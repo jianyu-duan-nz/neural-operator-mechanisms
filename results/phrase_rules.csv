@@ -1,0 +1,19 @@
+phrase,tokens,weights,bias,raw_concept_value
+belongs to,belongs to,3 4,6,107
+is part of,is part of,2 2 1,21,108
+is among,is among,2 2,25,109
+is in,is in,2 2,22,110
+all,all,1,164,201
+every,every,1,161,202
+each,each,1,160,203
+any,any,1,157,204
+have,have,1,248,301
+has,has,1,243,302
+possess,possess,1,242,303
+own,own,1,237,304
+carry,carry,1,234,305
+contain,contain,1,233,306
+near,near,1,822,901
+beside,beside,1,819,902
+before,before,1,814,903
+after,after,1,807,904

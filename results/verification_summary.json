@@ -1,0 +1,18 @@
+{
+  "total": 16680,
+  "passed": 16680,
+  "total_token_code_embedding_uniqueness": 1,
+  "passed_token_code_embedding_uniqueness": 1,
+  "total_raw_phrase_generation": 18,
+  "passed_raw_phrase_generation": 18,
+  "total_relation_interval": 999,
+  "passed_relation_interval": 999,
+  "total_quantifier_interval": 999,
+  "passed_quantifier_interval": 999,
+  "total_predicate_interval": 999,
+  "passed_predicate_interval": 999,
+  "total_exhaustive_phrase_combination": 11664,
+  "passed_exhaustive_phrase_combination": 11664,
+  "total_random_positive_integer": 2000,
+  "passed_random_positive_integer": 2000
+}

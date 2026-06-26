@@ -1,0 +1,443 @@
+{
+  "BIG": 1000000,
+  "token_input_codes": {
+    "belongs": 1001,
+    "to": 1002,
+    "is": 1003,
+    "part": 1004,
+    "of": 1005,
+    "among": 1006,
+    "in": 1007,
+    "all": 1011,
+    "every": 1012,
+    "each": 1013,
+    "any": 1014,
+    "have": 1021,
+    "has": 1022,
+    "possess": 1023,
+    "own": 1024,
+    "carry": 1025,
+    "contain": 1026,
+    "near": 1091,
+    "beside": 1092,
+    "before": 1093,
+    "after": 1094
+  },
+  "token_embeddings": {
+    "belongs": 11,
+    "to": 17,
+    "is": 13,
+    "part": 19,
+    "of": 23,
+    "among": 29,
+    "in": 31,
+    "all": 37,
+    "every": 41,
+    "each": 43,
+    "any": 47,
+    "have": 53,
+    "has": 59,
+    "possess": 61,
+    "own": 67,
+    "carry": 71,
+    "contain": 73,
+    "near": 79,
+    "beside": 83,
+    "before": 89,
+    "after": 97
+  },
+  "phrase_rules": {
+    "belongs to": {
+      "tokens": [
+        "belongs",
+        "to"
+      ],
+      "weights": [
+        3,
+        4
+      ],
+      "bias": 6,
+      "raw_concept_value": 107
+    },
+    "is part of": {
+      "tokens": [
+        "is",
+        "part",
+        "of"
+      ],
+      "weights": [
+        2,
+        2,
+        1
+      ],
+      "bias": 21,
+      "raw_concept_value": 108
+    },
+    "is among": {
+      "tokens": [
+        "is",
+        "among"
+      ],
+      "weights": [
+        2,
+        2
+      ],
+      "bias": 25,
+      "raw_concept_value": 109
+    },
+    "is in": {
+      "tokens": [
+        "is",
+        "in"
+      ],
+      "weights": [
+        2,
+        2
+      ],
+      "bias": 22,
+      "raw_concept_value": 110
+    },
+    "all": {
+      "tokens": [
+        "all"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 164,
+      "raw_concept_value": 201
+    },
+    "every": {
+      "tokens": [
+        "every"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 161,
+      "raw_concept_value": 202
+    },
+    "each": {
+      "tokens": [
+        "each"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 160,
+      "raw_concept_value": 203
+    },
+    "any": {
+      "tokens": [
+        "any"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 157,
+      "raw_concept_value": 204
+    },
+    "have": {
+      "tokens": [
+        "have"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 248,
+      "raw_concept_value": 301
+    },
+    "has": {
+      "tokens": [
+        "has"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 243,
+      "raw_concept_value": 302
+    },
+    "possess": {
+      "tokens": [
+        "possess"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 242,
+      "raw_concept_value": 303
+    },
+    "own": {
+      "tokens": [
+        "own"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 237,
+      "raw_concept_value": 304
+    },
+    "carry": {
+      "tokens": [
+        "carry"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 234,
+      "raw_concept_value": 305
+    },
+    "contain": {
+      "tokens": [
+        "contain"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 233,
+      "raw_concept_value": 306
+    },
+    "near": {
+      "tokens": [
+        "near"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 822,
+      "raw_concept_value": 901
+    },
+    "beside": {
+      "tokens": [
+        "beside"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 819,
+      "raw_concept_value": 902
+    },
+    "before": {
+      "tokens": [
+        "before"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 814,
+      "raw_concept_value": 903
+    },
+    "after": {
+      "tokens": [
+        "after"
+      ],
+      "weights": [
+        1
+      ],
+      "bias": 807,
+      "raw_concept_value": 904
+    }
+  },
+  "category_mappers": {
+    "relation": {
+      "interval": [
+        101,
+        120
+      ],
+      "canonical_output": 7,
+      "outside_output": 0
+    },
+    "quantifier": {
+      "interval": [
+        201,
+        220
+      ],
+      "canonical_output": 1,
+      "outside_output": 0
+    },
+    "predicate": {
+      "interval": [
+        301,
+        320
+      ],
+      "canonical_output": 3,
+      "outside_output": 0
+    }
+  },
+  "figure5_biases": {
+    "(2,1)": "-1000000",
+    "(2,2)": "-1000000",
+    "(2,3)": "-1000000",
+    "(2,4)": "0",
+    "(2,5)": "0",
+    "(2,6)": "-1000000",
+    "(3,1)": "0",
+    "(3,2)": "0",
+    "(3,3)": "0",
+    "(3,4)": "-6",
+    "(3,5)": "-1000000",
+    "(4,1)": "0",
+    "(4,2)": "0",
+    "(4,3)": "0",
+    "(5,1)": "-1000000",
+    "(5,2)": "0",
+    "(5,3)": "-1000000"
+  },
+  "figure5_edges": [
+    {
+      "source": "(1,1)",
+      "target": "(2,1)",
+      "weight": "1"
+    },
+    {
+      "source": "(1,2)",
+      "target": "(2,1)",
+      "weight": "1000000/7"
+    },
+    {
+      "source": "(1,2)",
+      "target": "(2,2)",
+      "weight": "1000000/7"
+    },
+    {
+      "source": "(1,3)",
+      "target": "(2,2)",
+      "weight": "1"
+    },
+    {
+      "source": "(1,4)",
+      "target": "(2,3)",
+      "weight": "1000000"
+    },
+    {
+      "source": "(1,5)",
+      "target": "(2,3)",
+      "weight": "1"
+    },
+    {
+      "source": "(1,4)",
+      "target": "(2,4)",
+      "weight": "1"
+    },
+    {
+      "source": "(1,6)",
+      "target": "(2,5)",
+      "weight": "1"
+    },
+    {
+      "source": "(1,6)",
+      "target": "(2,6)",
+      "weight": "1000000/3"
+    },
+    {
+      "source": "(1,7)",
+      "target": "(2,6)",
+      "weight": "1"
+    },
+    {
+      "source": "(2,1)",
+      "target": "(3,1)",
+      "weight": "1"
+    },
+    {
+      "source": "(2,2)",
+      "target": "(3,2)",
+      "weight": "-1"
+    },
+    {
+      "source": "(2,3)",
+      "target": "(3,2)",
+      "weight": "1"
+    },
+    {
+      "source": "(2,2)",
+      "target": "(3,3)",
+      "weight": "1"
+    },
+    {
+      "source": "(2,3)",
+      "target": "(3,3)",
+      "weight": "-1"
+    },
+    {
+      "source": "(2,4)",
+      "target": "(3,4)",
+      "weight": "6"
+    },
+    {
+      "source": "(2,5)",
+      "target": "(3,4)",
+      "weight": "1"
+    },
+    {
+      "source": "(2,4)",
+      "target": "(3,5)",
+      "weight": "1000000"
+    },
+    {
+      "source": "(2,6)",
+      "target": "(3,5)",
+      "weight": "1"
+    },
+    {
+      "source": "(3,1)",
+      "target": "(4,1)",
+      "weight": "1"
+    },
+    {
+      "source": "(3,2)",
+      "target": "(4,1)",
+      "weight": "-1000000"
+    },
+    {
+      "source": "(3,3)",
+      "target": "(4,1)",
+      "weight": "-1000000"
+    },
+    {
+      "source": "(3,4)",
+      "target": "(4,2)",
+      "weight": "1"
+    },
+    {
+      "source": "(3,2)",
+      "target": "(4,2)",
+      "weight": "-100"
+    },
+    {
+      "source": "(3,3)",
+      "target": "(4,2)",
+      "weight": "-100"
+    },
+    {
+      "source": "(3,5)",
+      "target": "(4,3)",
+      "weight": "1"
+    },
+    {
+      "source": "(4,1)",
+      "target": "(5,1)",
+      "weight": "1"
+    },
+    {
+      "source": "(4,2)",
+      "target": "(5,1)",
+      "weight": "1000000/3"
+    },
+    {
+      "source": "(4,2)",
+      "target": "(5,2)",
+      "weight": "1"
+    },
+    {
+      "source": "(4,2)",
+      "target": "(5,3)",
+      "weight": "1000000/3"
+    },
+    {
+      "source": "(4,3)",
+      "target": "(5,3)",
+      "weight": "1"
+    }
+  ]
+}

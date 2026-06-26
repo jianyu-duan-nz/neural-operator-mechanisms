@@ -1,0 +1,4 @@
+mapper,interval_low,interval_high,canonical_output,outside_output
+relation,101,120,7,0
+quantifier,201,220,1,0
+predicate,301,320,3,0
