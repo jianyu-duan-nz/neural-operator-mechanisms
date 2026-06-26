@@ -8,6 +8,8 @@ Jianyu Duan and Mingjun Duan — AEQ AI Research Institute, New Zealand
 
 📄 Paper: [`The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf`](https://raw.githubusercontent.com/jianyu-duan-nz/neural-operator-mechanism/main/The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf)
 
+📰 News webpage: [`index.html`](index.html)
+
 > **Scope of this repository.** The paper rests on three layers of evidence — an explicit
 > parameter-level construction, free-trained dense networks and a Transformer, and a
 > reading of large-model phenomena. **This repo contains only the first layer:** the
