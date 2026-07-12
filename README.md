@@ -1,6 +1,6 @@
 # Neural Operator Mechanisms in AI Reasoning
 
-Code, parameters, and exact-verification artifacts accompanying the paper:
+Code, parameters, and verification artifacts accompanying the paper:
 
 **The Reasoning Mechanism of AI Neural Networks**
 *A Clear, Neuronal-Level Account of Language, Reasoning, and Other Semantic Transformations*
@@ -15,7 +15,7 @@ Jianyu Duan and Mingjun Duan — AEQ AI Research Institute, New Zealand
 > **Scope of this repository.** The paper rests on three layers of evidence — an explicit
 > parameter-level construction, free-trained dense networks and a Transformer, and a
 > reading of large-model phenomena. **This repo contains only the first layer:** the
-> self-contained exact-construction-and-verification experiment for the syllogism circuit
+> self-contained explicit construction-and-verification experiment for the syllogism circuit
 > (the 16,680-test pipeline). The trained-network experiments are summarized in
 > [How this fits the paper](#how-this-fits-the-paper) and reported in full in a companion
 > experiment report referenced in the paper; their code and artifacts are not included here.
@@ -40,10 +40,10 @@ the categorical syllogism
 ```
 
 The complete word-and-phrase-to-conclusion pipeline is specified down to individual
-weight parameters and **passes all 16,680 exact simulation tests**. This repository
+weight parameters and **passes all 16,680 simulation tests**. This repository
 contains that construction and its verification.
 
-The experiment in this repository is the **exact-construction-and-verification** of that
+The experiment in this repository is the **explicit construction-and-verification** of that
 circuit — not a training run: the weights, biases, token codes, concept-generation rules,
 category mappers, and reasoning-core connections are specified explicitly and then tested
 exhaustively over a controlled set of valid and invalid inputs. The circuit is a concrete
@@ -76,7 +76,7 @@ the shared middle term all hold.
 
 | Path | Description |
 | --- | --- |
-| [`run_fig5_end_to_end_exact.py`](run_fig5_end_to_end_exact.py) | Self-contained script that builds the explicit circuit and runs the full exact verification. |
+| [`run_fig5_end_to_end_exact.py`](run_fig5_end_to_end_exact.py) | Self-contained script that builds the explicit circuit and runs the full verification. |
 | [`results/`](results/) | Generated parameter specification and verification artifacts (see below). |
 | [`The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf`](https://jianyu-duan-nz.github.io/neural-operator-mechanisms/The_Reasoning_Mechanism_of_AI_Neural_Networks.pdf) | The full paper. |
 | [`Experimental_Analysis_Report.pdf`](https://jianyu-duan-nz.github.io/neural-operator-mechanisms/Experimental_Analysis_Report.pdf) | Companion experimental analysis report (controlled experiments testing the operator account). |
@@ -124,7 +124,7 @@ The current artifacts record **16,680 / 16,680** tests passing, broken down as:
 
 The paper develops the operator account in three layers of evidence:
 
-1. **Explicit construction (this repo).** A parameter-level circuit, verified exactly
+1. **Explicit construction (this repo).** A parameter-level circuit, verified
    end to end over all valid and invalid cases.
 2. **Free-trained networks.** Dense networks trained on the final conclusion alone, and
    a standard attention-plus-ReLU Transformer, are shown to realize the same operator
@@ -139,8 +139,8 @@ hand-built:
 
 - **Free training.** Dense networks trained on final outputs alone form the recognition,
   gating, and mismatch-blocking units on their own, and the same operator topology
-  reappears in a standard attention-plus-ReLU Transformer (confirmed by causal
-  interventions).
+  reappears in a standard attention-plus-ReLU Transformer, consistent with the
+  theory-predicted operator topology.
 - **Robustness.** The operators are learned equivalently under ReLU, GELU, SiLU, SwiGLU,
   and attention-style edges, and across a range of reasoning types beyond the categorical
   syllogism (propositional, predicate, nested, fuzzy, modal, and analogical).
